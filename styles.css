@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -16,11 +16,12 @@
 }
 
 .header {
-    width: 90%;
+    width: 100%;
     align-items: center;
     display: flex;
     margin: auto;
     padding-top: 10px;
+    border-bottom: #cbd6e4 solid 0.25px;
 }
 
 .logo {
@@ -28,11 +29,12 @@
     cursor: pointer;
     margin-top: 10px;
     margin-left: 20px;
+    transition: 0.7s;
 }
 
 .logo:hover {
     transform: scale(1.1);
-    transition: .1s ease-in-out;
+    transition: 0.35s ease-in-out;
 }
 
 nav {
@@ -47,9 +49,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(251, 246, 246);
     font-size: 18px;
     font-weight: 600;
+    transition: 0.35s;
+}
+
+nav ul li a:hover {
+    color: #d62828;
+    font-size: 22px;
 }
 
 .btn-div {
@@ -71,37 +79,41 @@ nav ul li a {
     padding: 12px 20px;
     margin: 10px;
     text-decoration: none;
-    box-shadow: 5px 4px 5px rgba(94,28,68,.15);
+    box-shadow: 5px 4px 5px rgba(94, 28, 68, .15);
     text-shadow: 0px 1px 0px #528ecc;
+    transition: 0.35s;
 }
 
 #Signup-btn {
+    background-color: #f7ede2;
     text-transform: uppercase;
     border-radius: 30px;
-    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
-    border: 1px solid #cbcbcb;
+    /* background: linear-gradient(to bottom, #fefae0 2%, #fff 100%); */
+    border: 1px solid #f5cac3;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     font-weight: 700;
-    color: #5e97d1;
+    color: #d62828;
     padding: 12px 20px;
     margin: 10px;
     text-decoration: none;
-    box-shadow: 5px 4px 5px rgba(94,28,68,.15);
+    box-shadow: 5px 4px 5px rgba(94, 28, 68, .15);
     text-shadow: 0px 1px 0px #cbcbcb;
+    transition: 0.35s;
 }
 
 #Login-btn:hover {
-    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, .15);
     transform: scale(1.1);
-    transition: .1s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 
-#Signup-btn:hover{
-    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+#Signup-btn:hover {
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, .15);
     transform: scale(1.1);
-    transition: .1s ease-in-out;
+    transition: .25s ease-in-out;
+    cursor: pointer;
 }
 
 .content {
@@ -134,7 +146,7 @@ nav ul li a {
 
 #Buynow-btn {
     border-radius: 30px;
-    background: linear-gradient(to bottom, #cbcbcb 2%, #fff 100%);
+    background: linear-gradient(to bottom, #fff0f3 2%, #fff 100%);
     margin-top: 60px;
     margin-left: 140px;
     padding: 15px 30px;
@@ -142,24 +154,33 @@ nav ul li a {
     border: none;
     font-size: 20px;
     font-weight: 600;
-    color: #1b1b1b;
-    box-shadow: 1px 4px 12px ;
+    color: #370617;
+    box-shadow: 1px 4px 12px;
     cursor: pointer;
+    transition: 0.35s;
 }
 
 #Buynow-btn:hover {
     transform: scale(1.1);
-    transition: .1s ease-in-out;
+    transition: .25s ease-in-out;
+    color: #c1121f;
+    background-color: #f2e9e4;
+
 }
 
 .pepsi {
     position: absolute;
     margin-left: 830px;
     margin-top: -250px;
+    transition: 0.35s;
 }
 
 .pepsi:hover {
     transform: scale(1.12);
-    transition: .1s ease-in-out;
+    transition: .31s ease-in-out;
     cursor: pointer;
+}
+
+.container .header #heading1:hover {
+    color: #f72585;
 }
